@@ -1,0 +1,62 @@
+{
+    "private": false,
+    "type": "module",
+    "license": "ISC",
+    "version": "1.0.0",
+    "name": "@termehui/vfocusdetect",
+    "description": "Vue 3 component for detect if any element inside container got focus",
+    "main": "./dist/vfocusdetect.umd.js",
+    "module": "./dist/vfocusdetect.es.js",
+    "types": "./dist/vfocusdetect.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/vfocusdetect.d.ts",
+                "default": "./dist/vfocusdetect.es.js"
+            },
+            "require": {
+                "types": "./dist/vfocusdetect.d.ts",
+                "default": "./dist/vfocusdetect.umd.js"
+            }
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "vue3",
+        "focus",
+        "focus detect",
+        ":focus-within"
+    ],
+    "authors": [
+        {
+            "email": "m.ajamekramy@gmail.com",
+            "homepage": "http://ekramy.ir",
+            "name": "Mojtaba Ekramy",
+            "role": "Developer"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/termehui/vfocusdetect"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && vite build",
+        "prepare": "npm run build",
+        "test": "vitest"
+    },
+    "dependencies": {
+        "vue": "^3.3.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.6.2",
+        "@vitejs/plugin-vue": "^4.3.4",
+        "typescript": "^5.2.2",
+        "vite": "^4.4.9",
+        "vite-plugin-dts": "^3.5.3",
+        "vitest": "^0.34.4",
+        "vue-tsc": "^1.8.11"
+    }
+}
